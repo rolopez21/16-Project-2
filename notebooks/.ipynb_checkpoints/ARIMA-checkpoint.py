@@ -14,3 +14,5 @@ def arima_fuc (df):
     df2 = df2.rename(columns = {"VLO" : "Actuals"})
     
     results = pd.concat([df2, forecast_df], join='outer', axis=1)
+    
+    return results
